@@ -6,9 +6,12 @@
   [p-icon-actions]="navbarActions"
 ></po-navbar>
 
+<!-- <po-toolbar p-title="Portinari Toolbar"></po-toolbar> -->
+
 <div class="po-wrapper">
 
   <po-menu
+    class="menu"
     p-collapsed=false
     #menuLateral
     [p-menus]="menus"
@@ -29,6 +32,8 @@
           <div class="po-font-text">{{ user.email }}</div>
         </div>
       </div>
+
+      <po-divider></po-divider>
     </ng-template>
   </po-menu>
 
